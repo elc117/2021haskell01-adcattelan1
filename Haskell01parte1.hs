@@ -1,6 +1,19 @@
 -- Prática 01 de Haskell - Parte 1
 -- Nome: Anderson Dalmolin Cattelan
 
+module Haskell01parte1
+( sumSquares
+, circleArea
+, age
+, isElderly
+, htmlItem
+, startsWithA
+, isVerb
+, isVowel
+, hasEqHeads
+, isVowel2
+) where
+
 sumSquares :: Int -> Int -> Int
 sumSquares x y = x^2 + y^2
 
@@ -10,8 +23,8 @@ circleArea x = 3.1415 * x^2
 age :: Int -> Int -> Int
 age x y = y - x
 
-isEldery :: Int -> Bool
-isEldery x = if x > 65 then True else False
+isElderly :: Int -> Bool
+isElderly x = if x > 65 then True else False
 
 htmlItem :: String -> String
 htmlItem x = "<li>" ++ x ++ "</li>"
@@ -30,8 +43,3 @@ hasEqHeads x y = if head x == head y then True else False
 
 isVowel2 :: Char -> Bool
 isVowel2 x = elem x ['a','e','i','o','u', 'A', 'E', 'I', 'O', 'U']
-
-
-
-
-

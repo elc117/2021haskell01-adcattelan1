@@ -2,6 +2,11 @@
 	Primeiros passos em Haskell
 -}
 
+module Haskell01quickstart
+( isLongWord
+, isEven
+) where
+
 -- Eleva um numero ao quadrado
 -- Aqui temos um comentario!
 square :: Int -> Int
